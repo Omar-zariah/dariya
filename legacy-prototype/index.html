@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#111e26">
+  <title>Darna — Manage your Moroccan home from anywhere</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#overview" data-nav="overview" aria-label="Darna home"><span class="brand-mark">✳</span><span><strong>darna<span class="brand-period">.</span></strong><small>HOME, CONNECTED</small></span></a>
+      <div class="nav-caption">YOUR SPACE</div>
+      <nav aria-label="Main navigation" id="sidebar-nav">
+        <button class="nav-link active" data-nav="overview"><span class="nav-ico">▦</span> Overview</button>
+        <button class="nav-link" data-nav="properties"><span class="nav-ico">⌂</span> My properties</button>
+        <button class="nav-link" data-nav="inspections"><span class="nav-ico">☷</span> Inspections</button>
+        <button class="nav-link" data-nav="approvals"><span class="nav-ico">◎</span> Repair approvals <span class="nav-count" id="approval-count">2</span></button>
+        <button class="nav-link" data-nav="spending"><span class="nav-ico">◫</span> Spending & records</button>
+      </nav>
+      <div class="sidebar-bottom"><div class="help-card"><span class="small-kicker">LOCAL CARE, GLOBAL PEACE OF MIND</span><strong>You're far away.<br>We're close to home.</strong><p>Every inspection, quote and expense in one place.</p><button class="link-btn" data-action="request-inspection">Book an inspection ↗</button></div><div class="sidebar-foot">PROTOTYPE · SAMPLE DATA<br><span>No real services are being booked.</span></div></div>
+    </aside>
+    <div class="mobile-bar"><a class="mobile-brand" href="#overview" data-nav="overview">✳ darna<span>.</span></a><button id="mobile-menu" aria-label="Open navigation" aria-expanded="false">☰ Menu</button></div>
+    <main class="main-area"><header class="topbar"><div class="crumb">MY ACCOUNT <span class="crumb-divider">/</span> <strong id="current-page">Overview</strong></div><div class="top-actions"><span class="connection"><i></i> LOCAL DEMO</span><button class="mode-toggle" id="mode-toggle" title="Switch between owner and local operations demo">Owner view <span>⇄</span></button><div class="avatar">AM</div></div></header><div id="app-content" aria-live="polite"></div><footer class="footer">Darna prototype · Built to validate remote property care in Morocco <span>All amounts in Moroccan dirhams (MAD)</span></footer></main>
+  </div>
+  <div id="modal-root"></div><div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>

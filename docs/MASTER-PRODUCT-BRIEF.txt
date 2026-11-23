@@ -1,0 +1,760 @@
+MASTER PRODUCT DEVELOPMENT PROMPT
+
+DARIYA — Smart Property Management for Moroccans Living Abroad
+
+1. PROJECT OVERVIEW
+
+Build a modern PropTech startup called DARIYA, a digital property management platform based in Morocco.
+
+DARIYA helps Moroccans living abroad (MRE — Marocains Résidant à l’Étranger) remotely manage their houses, apartments, rental properties, maintenance, expenses, tenants, and property documents.
+
+The platform combines:
+
+* Property management software
+* Remote property inspections
+* Maintenance coordination
+* Rental management
+* Financial tracking
+* A network of trusted local service providers
+* AI-powered property assistance
+
+The main concept:
+
+“Your home in Morocco. Managed from anywhere.”
+
+DARIYA is not simply a real estate listing website. It is a complete digital property management service.
+
+The first launch market is Tangier, Morocco, with future expansion to Nador, Oujda, Fes, Casablanca, Rabat, and other Moroccan cities.
+
+⸻
+
+2. PLATFORM VERSIONS
+
+Build the product in three development stages.
+
+VERSION 1 — MVP (Launch Version)
+
+Purpose: Launch quickly, validate demand, and manage the first 10–50 properties.
+
+Platform:
+
+* Responsive web application
+* Mobile-first design
+* PWA-ready architecture
+* Desktop and tablet support
+* French, Arabic, and English language structure
+
+Core modules:
+
+1. Customer registration and login
+2. Property dashboard
+3. Property details and photos
+4. Maintenance request system
+5. Expense tracking
+6. Rental tracking
+7. Digital document storage
+8. Property inspection reports
+9. Notifications
+10. Admin dashboard
+11. Service provider management
+12. Subscription plans
+
+The MVP should prioritize functionality over complexity.
+
+VERSION 2 — FULL PLATFORM
+
+Purpose: Scale operations to hundreds or thousands of properties.
+
+Add:
+
+* Native mobile apps for iOS and Android
+* Tenant portal
+* Technician portal
+* Online payment integration
+* Automated recurring invoices
+* Rental contract management
+* Advanced financial analytics
+* Property inspection scheduling
+* Maintenance quotation approval
+* Automated WhatsApp notifications
+* Multi-property management
+* Customer support center
+* Subscription billing
+* Advanced role permissions
+
+VERSION 3 — AI PROPERTY ECOSYSTEM
+
+Purpose: Transform DARIYA into a scalable PropTech company.
+
+Add:
+
+* AI property assistant
+* AI-generated monthly reports
+* Smart maintenance recommendations
+* Predictive maintenance
+* AI document organization
+* Rental income analytics
+* Property investment dashboard
+* Property acquisition support
+* Smart pricing recommendations
+* Automated operational workflows
+
+Example:
+
+Customer asks:
+
+“What happened to my property this month?”
+
+AI responds:
+
+“Your apartment in Tangier received 4,500 MAD in rent. One plumbing repair was completed for 350 MAD. Your latest inspection is complete. There are no outstanding maintenance requests.”
+
+AI must only use verified information available in the customer’s account.
+
+⸻
+
+3. USER ROLES
+
+Build a role-based platform with four main user types.
+
+A. Property Owner
+
+The main customer, often living abroad.
+
+Can:
+
+* Register and log in
+* Add properties
+* View property status
+* Upload documents
+* Monitor rent
+* Track expenses
+* Request inspections
+* Approve maintenance quotations
+* View photos and videos
+* Download reports
+* Manage subscriptions
+* Contact support
+
+B. DARIYA Administrator
+
+The internal operations team.
+
+Can:
+
+* Manage all users
+* Approve properties
+* Assign field agents
+* Manage maintenance requests
+* Create inspection reports
+* Manage subscriptions
+* Monitor payments
+* Manage service providers
+* Access operational analytics
+
+C. Field Agent
+
+The person physically visiting properties.
+
+Can:
+
+* View assigned properties
+* Schedule visits
+* Upload photos and videos
+* Complete inspection checklists
+* Report problems
+* Submit maintenance estimates
+* Update visit status
+
+D. Service Provider
+
+Examples:
+
+* Plumber
+* Electrician
+* Painter
+* Cleaner
+* Air conditioning technician
+* Locksmith
+
+Can:
+
+* Receive assigned jobs
+* View job details
+* Submit quotations
+* Upload before-and-after photos
+* Update work status
+* Submit invoices
+
+⸻
+
+4. CUSTOMER APPLICATION — DETAILED PAGES
+
+Page 1: Landing Page
+
+Create a premium, modern startup landing page.
+
+Hero headline:
+
+“Your Home in Morocco. Always Under Control.”
+
+Subheadline:
+
+“Manage your Moroccan property from anywhere in the world. Monitor maintenance, rent, expenses, inspections, and everything that matters — all in one place.”
+
+Primary CTA:
+“Manage My Property”
+
+Secondary CTA:
+“Explore Services”
+
+Sections:
+
+1. Hero
+2. How DARIYA Works
+3. Services
+4. Property Dashboard Preview
+5. Why DARIYA
+6. Pricing
+7. Customer Testimonials
+8. FAQ
+9. Contact
+10. Footer
+
+Include a visual representation of a Moroccan home with a modern dashboard interface.
+
+Avoid generic real estate marketplace design.
+
+The brand should feel like a trusted technology and property management company.
+
+Page 2: Authentication
+
+Create:
+
+* Sign up
+* Login
+* Forgot password
+* Email verification
+* Secure authentication
+
+Registration fields:
+
+* Full name
+* Email
+* Phone number
+* Country of residence
+* Preferred language
+* Password
+
+Page 3: Owner Dashboard
+
+Design a premium dashboard.
+
+Welcome message:
+
+“Good evening, Ahmed.”
+
+Summary cards:
+
+* Total Properties
+* Monthly Rental Income
+* Monthly Expenses
+* Pending Requests
+
+Property overview cards:
+
+Property: Tangier Apartment
+
+Status: Good
+
+Monthly Rent: 4,500 MAD
+
+Last Inspection: 12 September
+
+Open Issues: 1
+
+Actions:
+
+* View Property
+* Request Inspection
+* Report Issue
+
+Include recent activity:
+
+* Rent payment recorded
+* Maintenance completed
+* Inspection report uploaded
+
+Page 4: Property Management
+
+Each property must have its own dedicated page.
+
+Information:
+
+* Property name
+* Property type
+* City
+* Address
+* Number of bedrooms
+* Surface area
+* Property photos
+* Occupancy status
+* Tenant information
+* Monthly rent
+* Ownership documents
+
+Tabs:
+
+Overview
+Maintenance
+Rent
+Expenses
+Inspections
+Documents
+Activity
+
+Page 5: Maintenance Center
+
+This is one of the most important features.
+
+Customer can create a request:
+
+* Select property
+* Select issue category
+* Describe problem
+* Upload photos
+* Set urgency
+
+Categories:
+
+* Plumbing
+* Electricity
+* Air conditioning
+* Painting
+* Cleaning
+* Doors and locks
+* Other
+
+Workflow:
+
+REQUEST CREATED
+→ REVIEWED BY DARIYA
+→ QUOTATION SUBMITTED
+→ OWNER APPROVAL
+→ TECHNICIAN ASSIGNED
+→ WORK IN PROGRESS
+→ COMPLETED
+→ CUSTOMER CONFIRMATION
+
+For quotations above a configurable approval threshold, the owner must explicitly approve before work begins, except where a separately authorized emergency procedure applies.
+
+Display:
+
+Estimated Cost: 450 MAD
+
+Buttons:
+
+Approve
+Reject
+Request More Information
+
+After completion, show:
+
+* Before photos
+* After photos
+* Final invoice
+* Completion date
+* Technician information
+
+Page 6: Property Inspection
+
+Allow the owner to request a physical inspection.
+
+Inspection types:
+
+* Basic inspection
+* Detailed inspection
+* Move-in inspection
+* Move-out inspection
+* Maintenance inspection
+
+Field agent checklist:
+
+* Entrance
+* Living room
+* Kitchen
+* Bathroom
+* Bedrooms
+* Windows
+* Doors
+* Electricity
+* Plumbing
+* General condition
+
+Allow photo and video uploads.
+
+Generate a digital inspection report containing:
+
+* Property information
+* Inspection date
+* Agent name
+* Checklist results
+* Images
+* Observations
+* Recommended actions
+
+Page 7: Financial Dashboard
+
+Track:
+
+* Rental income
+* Maintenance expenses
+* Utility bills
+* Management fees
+* Other expenses
+* Monthly net cash flow
+
+Example:
+
+Rental Income: 4,500 MAD
+
+Maintenance: 350 MAD
+
+Management Fee: 249 MAD
+
+Other Expenses: 100 MAD
+
+Net Recorded Income: 3,801 MAD
+
+Include monthly charts and downloadable PDF reports.
+
+All calculations must use recorded transactions, not estimated or invented financial data.
+
+Page 8: Documents
+
+Create secure document management.
+
+Categories:
+
+* Property ownership documents
+* Rental contracts
+* Tenant documents
+* Maintenance invoices
+* Utility bills
+* Inspection reports
+* Other documents
+
+Features:
+
+* Upload
+* Preview
+* Download
+* Categorize
+* Search
+* Access permissions
+
+⸻
+
+5. SUBSCRIPTION SYSTEM
+
+Create three subscription plans.
+
+BASIC — 99 MAD/month
+
+* One property
+* Digital dashboard
+* Expense tracking
+* Document storage
+* Maintenance requests
+* Monthly digital summary
+
+CARE — 249 MAD/month
+
+* One property
+* All Basic features
+* Quarterly physical inspection
+* Photo and video report
+* Maintenance coordination
+* Dedicated support
+
+FULL MANAGEMENT — 8–12% of collected monthly rent
+
+* Rental management
+* Tenant coordination
+* Rent tracking
+* Maintenance management
+* Property inspections
+* Monthly financial reporting
+
+Make pricing configurable through the admin panel.
+
+Do not hardcode prices throughout the application.
+
+⸻
+
+6. ADMIN DASHBOARD
+
+Build a separate internal dashboard.
+
+Overview:
+
+* Total customers
+* Total properties
+* Active subscriptions
+* Monthly recurring revenue
+* Pending maintenance requests
+* Scheduled inspections
+* Active technicians
+* Customer support tickets
+
+Admin functions:
+
+* Add/edit/delete customers
+* Add/edit properties
+* Assign field agents
+* Approve service providers
+* Manage maintenance requests
+* Track expenses
+* Manage subscriptions
+* Generate reports
+* View activity logs
+
+Use role-based permissions and audit logs.
+
+⸻
+
+7. DESIGN SYSTEM
+
+Brand name: DARIYA
+
+Brand personality:
+
+* Trustworthy
+* Premium
+* Modern
+* Moroccan
+* Human
+* Secure
+* Professional
+
+Visual direction:
+
+Inspired by modern SaaS products such as Linear, Stripe, and Notion, combined with subtle Moroccan architectural elements.
+
+Color palette:
+
+* Deep navy: #142B3B
+* Warm ivory: #F7F5EF
+* Terracotta: #C87955
+* Muted sage: #82958A
+* White: #FFFFFF
+
+Typography:
+
+Use a modern sans-serif font such as Inter.
+
+Arabic interface should use a suitable Arabic font such as Noto Sans Arabic.
+
+UI requirements:
+
+* Clean spacing
+* Rounded cards
+* Subtle shadows
+* Clear hierarchy
+* Elegant icons
+* Responsive layouts
+* Accessible contrast
+* Minimal animations
+* Professional charts
+
+Do not use excessive gradients, excessive glassmorphism, or generic AI-generated dashboard layouts.
+
+The platform should look like a funded, professional PropTech startup.
+
+⸻
+
+8. MULTILINGUAL SUPPORT
+
+Build internationalization from the beginning.
+
+Languages:
+
+* French
+* Arabic
+* English
+
+Default language: French.
+
+Arabic must support RTL layouts correctly.
+
+Currency:
+
+MAD — Moroccan Dirham.
+
+Display dates and numbers according to selected locale.
+
+Future support for EUR is desirable for MRE-facing financial summaries, but all actual payments must be handled through legally supported payment arrangements.
+
+⸻
+
+9. TECHNICAL ARCHITECTURE
+
+Recommended stack:
+
+Frontend:
+Next.js + TypeScript
+
+UI:
+Tailwind CSS + shadcn/ui
+
+Backend:
+Supabase
+
+Database:
+PostgreSQL
+
+Authentication:
+Supabase Auth
+
+Storage:
+Supabase Storage
+
+Charts:
+Recharts
+
+Forms:
+React Hook Form + Zod
+
+Deployment:
+Vercel
+
+Architecture should be modular and scalable.
+
+Create reusable components.
+
+Use secure server-side authorization.
+
+Implement database Row Level Security so customers can only access their own properties and records.
+
+Do not expose secret keys in frontend code.
+
+⸻
+
+10. DATABASE STRUCTURE
+
+Create database tables for:
+
+users
+profiles
+properties
+property_images
+tenants
+rental_contracts
+rent_payments
+expenses
+maintenance_requests
+maintenance_quotes
+service_providers
+service_assignments
+inspections
+inspection_checklists
+inspection_media
+documents
+subscriptions
+notifications
+support_tickets
+activity_logs
+
+Use proper foreign keys, timestamps, status fields, and access policies.
+
+⸻
+
+11. CUSTOMER NOTIFICATIONS
+
+Support in-app notifications and prepare integrations for email and WhatsApp.
+
+Examples:
+
+“Your inspection is scheduled for October 15.”
+
+“Maintenance quotation received: 450 MAD.”
+
+“Your repair has been completed.”
+
+“Your monthly property report is ready.”
+
+“Your rent payment has been recorded.”
+
+Do not claim a payment or repair was completed unless the corresponding record has been confirmed.
+
+⸻
+
+12. SECURITY AND TRUST
+
+Because the platform manages private property information, implement:
+
+* Secure authentication
+* Role-based authorization
+* Private document storage
+* Signed URLs for sensitive files
+* Audit logs
+* Input validation
+* Secure file upload
+* Data isolation between customers
+* Privacy-conscious notifications
+* Backup strategy
+
+Design the platform to support applicable Moroccan data protection requirements, including Law 09-08 and CNDP obligations.
+
+⸻
+
+13. MVP ACCEPTANCE CRITERIA
+
+The first working version must allow a real customer to:
+
+1. Register.
+2. Log in.
+3. Add a property.
+4. Upload property photos.
+5. View a property dashboard.
+6. Submit a maintenance request.
+7. Receive and approve a quotation.
+8. View an inspection report.
+9. Track rent and expenses.
+10. Download property documents.
+11. View subscription information.
+
+The administrator must be able to manage all operational workflows.
+
+Use realistic demo data for preview, but clearly distinguish demo data from real customer records.
+
+⸻
+
+14. DEVELOPMENT INSTRUCTIONS
+
+Start by building Version 1, not all three versions simultaneously.
+
+First deliver:
+
+* Complete responsive landing page
+* Authentication
+* Customer dashboard
+* Property management
+* Maintenance workflow
+* Inspection reporting
+* Financial tracking
+* Admin dashboard
+* Database schema
+* Sample demo account
+
+Prioritize a working end-to-end product over decorative screens.
+
+Do not create buttons that do nothing.
+
+Do not use fake success messages for unfinished integrations.
+
+Build the project with clean, maintainable code and a clear path to Version 2 and Version 3.
+
+The final result should feel like a real Moroccan PropTech startup ready for its first pilot customers in Tangier.
+
+Product vision: DARIYA is the digital operating system for managing Moroccan properties remotely.

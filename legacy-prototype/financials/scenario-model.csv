@@ -1,0 +1,4 @@
+scenario,paying_homes,average_monthly_price_mad,monthly_direct_cost_per_home_mad,annual_fixed_cost_mad,annual_revenue_mad,annual_direct_cost_mad,annual_contribution_mad,annual_operating_result_before_tax_mad
+Conservative pilot,50,129,95,180000,77400,57000,20400,-159600
+Base pilot,150,199,105,220000,358200,189000,169200,-50800
+Density-led expansion,300,249,115,360000,896400,414000,482400,122400

@@ -1,0 +1,2 @@
+import { updatePassword } from '@/actions/auth';import { Alert,Card,Field } from '@/components/ui';
+export default async function Reset({searchParams}:{searchParams:Promise<{error?:string;notice?:string}>}){return <main className="auth-page"><Card><h1 className="heading">Choose a new password</h1><Alert searchParams={await searchParams}/><form action={updatePassword} className="stack"><Field name="password" label="New password (8+ characters)" type="password" required/><button className="btn">Change password</button></form></Card></main>}

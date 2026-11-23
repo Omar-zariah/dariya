@@ -1,0 +1,2 @@
+'use client';
+export default function Error({error,reset}:{error:Error&{digest?:string};reset:()=>void}){return <div className="card"><h1 className="heading">Unable to complete this action</h1><p className="muted">The service returned an error. Your action was not confirmed. Please review setup and access permissions if the issue persists.</p><p className="small" role="alert">{error.message}</p><button className="btn" onClick={()=>reset()}>Retry</button></div>}

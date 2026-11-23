@@ -1,0 +1,2 @@
+import { Lang } from '@/lib/i18n';
+export function LanguagePicker({current,path='/'}:{current:Lang;path?:string}){return <div className="lang-links" aria-label="Language">{(['fr','en','ar'] as const).map(l=><a key={l} aria-current={l===current?'page':undefined} style={l===current?{background:'#dbe3df'}:{}} href={'/api/locale?lang='+l+'&next='+encodeURIComponent(path)}>{l.toUpperCase()}</a>)}</div>}
