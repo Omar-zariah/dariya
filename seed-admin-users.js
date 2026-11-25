@@ -1,20 +1,22 @@
 /**
- * seed-admin-users.js
+ * seed-admin-users.js  —  DARIYA dev utility
+ *
  * Creates one confirmed test account per DARIYA role and promotes the
  * profile row to the correct role using the service-role key.
  *
- * Run once:  node seed-admin-users.js
+ * Usage (PowerShell):
+ *   $env:SUPABASE_URL       = "https://<project-ref>.supabase.co"
+ *   $env:SUPABASE_SECRET_KEY = "<service-role-key>"
+ *   node seed-admin-users.js
+ *
+ * NEVER hardcode credentials here. Always load from environment variables.
+ * Run once per new Supabase project.
  */
 
 const { createClient } = require('@supabase/supabase-js');
 
-// Load credentials from environment — never hardcode secrets in source files.
-// Set SUPABASE_URL and SUPABASE_SECRET_KEY in your shell before running:
-//   $env:SUPABASE_URL="https://xxxx.supabase.co"
-//   $env:SUPABASE_SECRET_KEY="sb_secret_..."
-//   node seed-admin-users.js
-const URL    = process.env.SUPABASE_URL        || (() => { throw new Error('SUPABASE_URL env var is required'); })();
-const SECRET = process.env.SUPABASE_SECRET_KEY || (() => { throw new Error('SUPABASE_SECRET_KEY env var is required'); })();
+const URL    = process.env.SUPABASE_URL        || (() => { throw new Error('Set SUPABASE_URL env var before running.'); })();
+const SECRET = process.env.SUPABASE_SECRET_KEY || (() => { throw new Error('Set SUPABASE_SECRET_KEY env var before running.'); })();
 
 const admin = createClient(URL, SECRET, {
   auth: { autoRefreshToken: false, persistSession: false },
@@ -31,7 +33,6 @@ const SEED_USERS = [
 ];
 
 async function upsertUser({ email, role, full_name }) {
-  // ── 1. Check if user already exists ────────────────────────────────────────
   const { data: existing } = await admin.auth.admin.listUsers();
   const found = existing.users.find(u => u.email === email);
 
@@ -41,7 +42,6 @@ async function upsertUser({ email, role, full_name }) {
     console.log(`  ⚠  ${email} already exists — skipping auth.users creation`);
     userId = found.id;
   } else {
-    // ── 2. Create auth user (pre-confirmed, no email sent) ──────────────────
     const { data, error } = await admin.auth.admin.createUser({
       email,
       password: PASSWORD,
@@ -58,9 +58,6 @@ async function upsertUser({ email, role, full_name }) {
     console.log(`  ✓  Created auth user ${email} (${userId})`);
   }
 
-  // ── 3. Promote profile row to the correct role ────────────────────────────
-  // The trigger on_user_created always sets role='owner'; we override it here
-  // using the service-role client which bypasses RLS.
   const { error: profileErr } = await admin
     .from('profiles')
     .update({ role, full_name })

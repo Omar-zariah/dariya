@@ -138,13 +138,18 @@ export default async function Home() {
   }[] = [];
 
   if (configured()) {
-    const db = await supabaseServer();
-    const res = await db
-      .from('subscription_plans')
-      .select('id,name,monthly_mad,percent_of_collected_rent,details')
-      .eq('is_active', true)
-      .order('name');
-    plans = res.data || [];
+    try {
+      const db = await supabaseServer();
+      const res = await db
+        .from('subscription_plans')
+        .select('id,name,monthly_mad,percent_of_collected_rent,details')
+        .eq('is_active', true)
+        .order('name');
+      plans = res.data || [];
+    } catch {
+      // Fallback to static plans if Supabase is unreachable or misconfigured
+      plans = [];
+    }
   }
 
   const fallbackPlans = [
